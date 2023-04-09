@@ -3,25 +3,72 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* ----- COLOR ----- */
+  /* SOLID */
+  --body-black: #1e1e1e;
+  --body-black-rgb: 30, 30, 30;
+  --card-black: #0e0e12;
+  --card-black-rgb: 14, 14, 18;
+  --footer-black: #0e0e11;
+  --footer-black-black: 14, 14, 17;
+  --white: #fff;
+  --white-rgb: rgb(255, 255, 255);
+  --pink: #bb0e8b;
+  --gray: #25252c;
+
+  /* GRADIENT */
+  --text-gradient: linear-gradient(90deg, #bb0e8b 1.52%, #8e0ebb 93.4%);
+  --background-gradient: linear-gradient(180deg, #690d53 0%, #1616b7 100%);
+
+  /* ----- BORDER RADIUS ----- */
+  --border-radius-sm: 8px; /* rounded-lg */
+  --border-radius-lg: 31px;
+
+  /* ----- TYPOGRAPHY ----- */
+  --font-family: "Inter";
+
+  /* text-6xl */
+  --heading-1-font-size: 3.75rem; /* 60px */
+  --heading-1-line-height: 1rem; /* 16px */
+
+  /* text-5xl */
+  --section-title-font-size: 3rem; /* 48px */
+  --section-title-line-height: 1rem; /* 16px */
+  --section-title-font-weight: 700;
+
+  /* text-3xl */
+  --section-subtitle-font-size: 1.875rem; /* 30px */
+  --section-subtitle-line-height: 2.25rem; /* 36px */
+
+  /* text-2xl */
+  --mute-text-font-size: 1.5rem; /* 24px */
+  --mute-text-line-height: 2rem; /* 32px */
+  --mute-text-color: #424255;
+  --mute-text-color-rgb: rgb(66, 66, 85);
+
+  /* text-base */
+  --text-base-font-size: 1rem; /* 16px */
+  --text-base-line-height: 1.5rem; /* 24px */
+
+  /* ----- SHADOW ----- */
+  --box-shadow-md: 0px 36px 11px -14px rgba(0, 0, 0, 0.25);
+  --box-shadow-lg: 42px 75px 42px -42px rgba(0, 0, 0, 0.58);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  font-size: var(--text-base-font-size);
+  color: var(--white);
+  background-color: var(--body-black);
 }

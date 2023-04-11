@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} px-4 md:px-20 py-8`}>
+      <body className={`${inter.className} py-14`}>
         <Header />
         <main className="max-w-[1920px] mx-auto overflow-x-hidden">
           {children}

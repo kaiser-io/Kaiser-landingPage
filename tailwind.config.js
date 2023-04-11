@@ -11,6 +11,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-svg": "url('/images/bg-lines/hero-bg-line.svg')",
         "kaiser-text-gradient":
           "linear-gradient(90deg, #bb0e8b 1.52%, #8e0ebb 93.4%)",
         "kaiser-background-gradient":
@@ -20,7 +21,7 @@ module.exports = {
         white: "#fff",
         pink: "#bb0e8b",
         gray: "#25252c",
-        "body-black": "#1e1e1e",
+        "body-black": "#111116",
         "cord-black": "#0e0e12",
         "footer-black": "#0e0e11",
         "text-gradient-start": "#bb0e8b",
@@ -34,6 +35,9 @@ module.exports = {
       boxShadow: {
         md: "0px 36px 11px -14px rgba(0, 0, 0, 0.25)",
         lg: "42px 75px 42px -42px rgba(0, 0, 0, 0.58)",
+      },
+      screens: {
+        "3xl": "1920px",
       },
     },
   },

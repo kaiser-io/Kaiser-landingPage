@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="h-[70vh] flex  mt-20">
+    <div className="h-[70vh] flex  my-12">
       <div className="">
         <Image
           alt="kaiser logo"
@@ -15,7 +15,7 @@ const Hero = () => {
           kaiser
         </h1>
         <h3 className="py-6 text-3xl">you private cloud agent</h3>
-        <p className="max-w-[502px]">
+        <p className="max-w-[31.375rem]">
           An all-in-one integrated system that can assist you with your cloud
           clusters management. Kaiser is based on a universal approach so that
           you can mange your deployment environments regardless the cloud

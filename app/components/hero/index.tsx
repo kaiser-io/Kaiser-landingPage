@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="h-[70vh] flex  my-12">
+    <div className="h-[70vh] flex my-12">
       <div className="">
         <Image
           alt="kaiser logo"

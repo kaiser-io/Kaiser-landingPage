@@ -2,11 +2,14 @@
 const nextConfig = {
   experimental: {
     appDir: true,
+    esmExternals: true,
   },
-  output: 'export',
-  outDir: 'public',
-  
-  
-}
+  images: {
+    loader: "akamai",
+    path: "/",
+  },
+  output: "export",
+  outDir: "public",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   output: 'export',
-  outDir: 'out',
+  outDir: 'public',
   
   
 }

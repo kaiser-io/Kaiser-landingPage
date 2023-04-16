@@ -29,7 +29,7 @@ const BenefitCard: FC<BenefitCardProps> = ({
     <div
       className={`${
         cardPosition === "center" ? "flex flex-row-reverse" : "flex"
-      } shadow-md h-[600px] mb-[417px]`}
+      } shadow-md h-[600px] mb-[320px]`}
     >
       <div className="relative bg-kaiser-background-gradient w-5/12 h-full">
         <div

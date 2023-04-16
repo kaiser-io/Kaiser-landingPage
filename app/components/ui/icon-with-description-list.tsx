@@ -21,12 +21,12 @@ const IconWithDescriptionList: FC<IconWithDescriptionListProps> = ({
   return (
     <ul
       className={`flex ${
-        isJustifyStart ? "justify-start gap-32" : "justify-between"
-      } text-center items-center mt-2 w-full max-w-4xl mx-auto`}
+        isJustifyStart ? "justify-start gap-32 max-w-4xl" : "justify-between"
+      } text-center items-center mt-2 w-full mx-auto`}
     >
       {iconList.map((icon) => (
         <li key={icon.title} className="flex flex-col items-center gap-8">
-          <div className={`flex items-center h-[${size}px] w-[${size}px]`}>
+          <div className={`flex items-center h-[110px] w-[${size}px]`}>
             <Image
               alt={`${icon.title} engine logo`}
               src={icon.imgSrc}
@@ -34,7 +34,7 @@ const IconWithDescriptionList: FC<IconWithDescriptionListProps> = ({
               height={size}
             />
           </div>
-          <span className={`${isCard ? "text-xl" : "text-2xl"} font-bold`}>
+          <span className={`${isCard ? "text-xl" : "text-2xl"} font-bold mt-2`}>
             {icon.title}
           </span>
         </li>

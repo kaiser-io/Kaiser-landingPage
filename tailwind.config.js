@@ -40,6 +40,9 @@ module.exports = {
       screens: {
         "3xl": "1920px",
       },
+      borderRadius: {
+        "4xl": "31px",
+      },
     },
   },
   plugins: [],

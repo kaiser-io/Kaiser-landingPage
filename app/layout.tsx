@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "./components/header";
+import HeaderMobile from './components/header-mobile';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} py-14`}>
         <Header />
+        <HeaderMobile />
         <main className="max-w-[1920px] mx-auto overflow-x-hidden">
           {children}
         </main>

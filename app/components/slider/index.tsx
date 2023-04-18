@@ -87,7 +87,7 @@ const Slider = () => {
         <SwiperSlide>
           {({ isActive }) => (
             <Image
-              src={`${imgSrc}/nodes-terminal.png`}
+              src={`${imgSrc}/nodes-logs.png`}
               alt="slide_image"
               width={1377}
               height={918}
@@ -98,7 +98,7 @@ const Slider = () => {
         <SwiperSlide>
           {({ isActive }) => (
             <Image
-              src={`${imgSrc}/nodes-terminal.png`}
+              src={`${imgSrc}/selected-service-2.png`}
               alt="slide_image"
               width={1377}
               height={918}
@@ -109,7 +109,7 @@ const Slider = () => {
         <SwiperSlide>
           {({ isActive }) => (
             <Image
-              src={`${imgSrc}/nodes-terminal.png`}
+              src={`${imgSrc}/import-cluster-certificate.png`}
               alt="slide_image"
               width={1377}
               height={918}
@@ -120,7 +120,7 @@ const Slider = () => {
         <SwiperSlide>
           {({ isActive }) => (
             <Image
-              src={`${imgSrc}/nodes-terminal.png`}
+              src={`${imgSrc}/selected-service.png`}
               alt="slide_image"
               width={1377}
               height={918}

@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} py-14`}>
+      <body
+        className={`${inter.className} pt-14 max-w-[1920px] mx-auto overflow-x-hidden`}
+      >
         <Header />
-        <main className="max-w-[1920px] mx-auto overflow-x-hidden">
-          {children}
-        </main>
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -18,8 +18,8 @@ export default function HeaderMobile() {
     </Link>
   })
   return (
-    <div className='fixed w-full left-0 top-0 items-start flex justify-between z-10 md:hidden'>
-      <div className={`w-[60%] flex flex-col justify-between h-screen bg-body-black py-10 pl-7 transition-all ${isShowMenu ? 'translate-x-[0]': 'translate-x-[-200%]' }`}>
+    <header className='fixed w-screen left-0 top-0 items-start flex justify-between z-10 md:hidden'>
+      <div className={`w-[60%] absolute flex flex-col justify-between h-screen bg-body-black py-10 pl-7 transition-all ${isShowMenu ? 'translate-x-[0]': 'translate-x-[-200%]' }`}>
         <nav className="text-xl flex flex-col items-start gap-8 w-full">
           { pagesLink }
         </nav>
@@ -27,6 +27,7 @@ export default function HeaderMobile() {
           <span>EN</span>
         </div>
       </div>
+      <div className='pt-6 pl-6 text-lg font-semibold font-sans mr-auto'>Kaiser</div>
       <button onClick={handleClickHamburgerMenu} className='pt-6 pr-6'>
           <Image 
             alt='hamburger menu' 
@@ -35,6 +36,6 @@ export default function HeaderMobile() {
             src={hamburgerMenuIcon} 
             />
       </button>
-    </div>
+    </header>
   )
 }

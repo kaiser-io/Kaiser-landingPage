@@ -6,7 +6,7 @@ import Slider from "./components/slider";
 function HomePage() {
   return (
     <div>
-      <div className="bg-hero-svg bg-no-repeat bg-contain bg-[position:_top_500px_center] px-4 md:px-20">
+      <div className="bg-hero-svg bg-no-repeat bg-contain bg-[position:_top_70vh_center] md:bg-[position:_top_500px_center] px-4 md:px-20">
         <Hero />
         <KubernetesEngines />
       </div>

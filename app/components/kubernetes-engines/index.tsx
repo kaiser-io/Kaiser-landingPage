@@ -1,16 +1,16 @@
 import SectionTitle from "../ui/section-title";
-import IconWithTitleList from "../ui/icon-with-description-list";
+import IconWithTitleList, { IconWithDescription } from "../ui/icon-with-description-list";
 
 const KubernetesEngines = () => {
   const imgSrc = "/images/mini-pics/kubernetes-engines-section";
-  const engines = [
-    { imgSrc: `${imgSrc}/kubernetes.png`, title: "kubernetes" },
-    { imgSrc: `${imgSrc}/EKS.png`, title: "EKS" },
-    { imgSrc: `${imgSrc}/GKE.png`, title: "GKE" },
-    { imgSrc: `${imgSrc}/AKS.png`, title: "AKS" },
+  const engines: IconWithDescription[] = [
+    { imgSrc: `${imgSrc}/kubernetes.png`, title: "kubernetes", sizes: { x: 140, y: 139 } },
+    { imgSrc: `${imgSrc}/EKS.png`, title: "EKS", sizes: { x: 139, y: 156 } },
+    { imgSrc: `${imgSrc}/GKE.png`, title: "GKE", sizes: { x: 166, y: 149 } },
+    { imgSrc: `${imgSrc}/AKS.png`, title: "AKS", sizes: { x: 169, y: 149 } },
   ];
   return (
-    <div className="flex flex-col justify-start w-10/12 mx-auto my-48">
+    <div className="flex flex-col justify-start w-11/12 md:w-10/12 mx-auto mt-16 mb-40 md:my-48">
       <SectionTitle
         title={"Kubernetes engines"}
         description="Manage your kubernetes clusters all in one place"

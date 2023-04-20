@@ -8,8 +8,8 @@ interface SectionTitleProps {
 const SectionTitle: FC<SectionTitleProps> = ({ title, description }) => {
   return (
     <>
-      <h2 className="text-4xl font-bold">{title}</h2>
-      <p className="text-2xl mt-8 mb-20">{description}</p>
+      <h2 className="text-2xl md:text-4xl font-bold">{title}</h2>
+      <p className="text-xl md:text-2xl mt-4 md:mt-8 mb-8 md:mb-20">{description}</p>
     </>
   );
 };

@@ -27,21 +27,21 @@ const BenefitCard: FC<BenefitCardProps> = ({
 }) => {
   return (
     <div
-      className={`${
-        cardPosition === "center" ? "flex flex-row-reverse" : "flex"
-      } shadow-md h-[600px] mb-[320px]`}
+      className={`flex flex-col ${
+        cardPosition === "center" ? "md:flex-row-reverse" : "md:flex-row"
+      } shadow-md h-auto md:h-[600px] mb-40 md:mb-[320px]`}
     >
-      <div className="relative bg-kaiser-background-gradient w-5/12 h-full">
+      <div className="relative bg-kaiser-background-gradient w-full md:w-5/12 h-[84px] md:h-full">
         <div
           className={`absolute ${
             cardPosition === "top"
-              ? "-top-20"
+              ? "-top-16 md:-top-20"
               : cardPosition === "center"
-              ? "-bottom-4"
-              : "top-1/2 -translate-y-1/2"
+              ? "-bottom-11 md:-bottom-4"
+              : "top-[60%] md:top-1/2 -translate-y-1/2"
           } ${
-            cardPosition === "center" ? "-right-20" : "-left-20"
-          } -right-20 w-[500px]`}
+            cardPosition === "center" ? "-right-8 md:-right-20" : "-left-8 md:-left-20"
+          } -right-20 w-40 md:w-[500px]`}
         >
           <Image
             alt="svg shape"
@@ -51,12 +51,14 @@ const BenefitCard: FC<BenefitCardProps> = ({
           />
         </div>
       </div>
-      <div className="bg-card-black p-12 w-10/12">
+      <div className="bg-card-black px-6 pt-12 pb-6 md:p-12 w-full md:w-10/12">
         <SectionTitle title={title} description={description} />
-        <IconWithDescriptionList
-          iconList={iconWithDescription}
-          isJustifyStart={cardPosition === "bottom"}
-        />
+        <div className='px-4 md:px-0'>
+          <IconWithDescriptionList
+            iconList={iconWithDescription}
+            isJustifyStart={cardPosition === "bottom"}
+          />
+        </div>
         {footerText ? (
           <p className="text-light-gray mt-12">{footerText}</p>
         ) : null}

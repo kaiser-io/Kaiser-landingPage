@@ -8,7 +8,13 @@ import {
 
 const Benefits = () => {
   return (
-    <div className={`lg:px-20`}>
+    <div
+      className={`lg:px-20 
+          bg-[url("/images/bg-lines/blue-center.svg")] 
+          bg-[position:top_-250px_left_-750px]
+          md:bg-[position:top_-380px_right_150px]
+          bg-no-repeat`}
+    >
       <BenefitCard
         title={"Deploy easily with few clicks"}
         description={

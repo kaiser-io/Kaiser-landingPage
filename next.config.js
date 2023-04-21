@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const environment = process.env.NODE_ENV;
+// const environment = process.env.NODE_ENV;
 const nextConfig = {
   experimental: {
     appDir: true,

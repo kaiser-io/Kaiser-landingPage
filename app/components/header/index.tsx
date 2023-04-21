@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="text-right flex justify-end items-center gap-16 pt-2.5 pb-6 px-4 md:px-20">
+    <header className="text-right hidden justify-end items-center gap-16 pt-2.5 pb-6 px-4 md:px-20 md:flex">
       <div className="border-b border-pink inline-block">
         <span>EN</span>
       </div>

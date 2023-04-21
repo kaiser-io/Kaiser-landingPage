@@ -8,7 +8,7 @@ import {
 
 const Benefits = () => {
   return (
-    <div className={`px-4 md:px-20`}>
+    <div className={`lg:px-20`}>
       <BenefitCard
         title={"Deploy easily with few clicks"}
         description={

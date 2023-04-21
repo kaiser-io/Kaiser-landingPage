@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "./components/header";
+import HeaderMobile from './components/header-mobile';
 import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,11 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html className='overflow-x-hidden' lang="en">
       <body
         className={`${inter.className} pt-14 max-w-[1920px] mx-auto overflow-x-hidden`}
       >
         <Header />
+        <HeaderMobile />
         <main>{children}</main>
         <Footer />
       </body>

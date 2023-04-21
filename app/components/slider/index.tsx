@@ -19,7 +19,7 @@ const Slider = () => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 250,
+          depth: 100,
           modifier: 2.5,
         }}
         pagination={{ el: ".swiper-pagination", clickable: true }}
@@ -36,7 +36,7 @@ const Slider = () => {
               alt="slide_image"
               width={1377}
               height={918}
-              className={`${isActive ? "scale-110" : "blur-sm"}`}
+              className={`${isActive ? "" : "blur-sm"}`}
             />
           )}
         </SwiperSlide>

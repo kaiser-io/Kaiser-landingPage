@@ -97,18 +97,23 @@ body {
   width: var(--img-width-sm);
   height: var(--img-height-sm);
   position: relative;
-
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+  .swiper-slide {
     width: var(--img-width-md);
     height: var(--img-width-md);
   }
+}
 
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .swiper-slide {
     width: var(--img-width-lg);
     height: var(--img-width-lg);
   }
+}
 
-  @media (min-width: 1536px) {
+@media (min-width: 1536px) {
+  .swiper-slide {
     width: var(--img-width-2xl);
     height: var(--img-width-2xl);
   }
@@ -127,18 +132,23 @@ body {
   height: var(--img-height-sm);
   border-radius: 2rem;
   object-fit: contain;
-
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+  .swiper-slide img {
     width: var(--img-width-md);
     height: var(--img-width-md);
   }
+}
 
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .swiper-slide img {
     width: var(--img-width-lg);
     height: var(--img-width-lg);
   }
+}
 
-  @media (min-width: 1536px) {
+@media (min-width: 1536px) {
+  .swiper-slide img {
     width: var(--img-width-2xl);
     height: var(--img-width-2xl);
   }
@@ -151,8 +161,9 @@ body {
 
 .slider-controler {
   display: none;
-
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+  .slider-controler {
     position: relative;
     bottom: 2rem;
     display: flex;
@@ -160,8 +171,10 @@ body {
     justify-content: center;
     margin-top: -1rem !important;
   }
+}
 
-  @media (min-width: 1280px) {
+@media (min-width: 1280px) {
+  .slider-controler {
     margin-top: -3rem;
   }
 }
@@ -173,13 +186,16 @@ body {
   border-radius: 50%;
   left: 35% !important;
   transform: translateX(-35%) !important;
-
-  @media (min-width: 1024px) {
+}
+@media (min-width: 1024px) {
+  .slider-controler .slider-arrow {
     left: 41% !important;
     transform: translateX(-41%) !important;
   }
+}
 
-  @media (min-width: 1280px) {
+@media (min-width: 1280px) {
+  .slider-controler .slider-arrow {
     left: 41% !important;
     transform: translateX(-41%) !important;
   }
@@ -193,13 +209,16 @@ body {
   left: 66% !important;
   transform: translateX(-66%) !important;
   order: 2;
-
-  @media (min-width: 1024px) {
+}
+@media (min-width: 1024px) {
+  .slider-controler .swiper-button-next {
     left: 60% !important;
     transform: translateX(-60%) !important;
   }
+}
 
-  @media (min-width: 1280px) {
+@media (min-width: 1280px) {
+  .slider-controler .swiper-button-next {
     left: 61% !important;
     transform: translateX(-61px) !important;
   }

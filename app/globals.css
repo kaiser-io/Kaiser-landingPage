@@ -253,3 +253,20 @@ body {
   width: 20px;
   height: 20px;
 }
+
+.swiper-slide {
+  transition: 0.1s !important;
+}
+
+.swiper-slide-active {
+  z-index: 1 !important;
+  transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1) !important;
+}
+
+.swiper-slide-prev {
+  z-index: -1 !important;
+}
+
+.swiper-slide-next {
+  z-index: -1 !important;
+}

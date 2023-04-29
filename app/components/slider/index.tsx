@@ -28,6 +28,7 @@ const Slider = () => {
           prevEl: ".swiper-button-prev",
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
+        className='pt-16'
       >
         <SwiperSlide>
           {({ isActive }) => (
